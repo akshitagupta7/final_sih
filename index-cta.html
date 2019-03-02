@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+
+    <title>गृहशोभा</title>
+	
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
+	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- template skin -->
+	<link id="t-colors" href="color/default.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+<div id="wrapper">
+	
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+		<div class="top-area" style="padding: 0px;">
+			<div class="container-fluid" style="padding:10px 0px 10px 10px">
+				<div >
+					<h1 class="bold text-left" style="font-family: 'Limelight'; color : white; font-size: 38pt;">
+						<img src="image/National-Emblem-1.jpg" style="width: 90px ; height: 70px; padding: 0px !important ;">
+						&nbsp; गृहशोभा
+
+					</h1>
+					<!-- <div class="col-sm-6 col-md-6">
+					</div> -->
+				</div>
+			</div>
+		</div>
+        <div class="container navigation">
+		
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <!-- <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="" width="150" height="40" />
+                </a> -->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+			  <ul class="nav navbar-nav" >
+				<li><a href="index.html" style="font-size: 12pt;">Home</a></li>
+				<li><a href="index.html" style="font-size: 12pt;">About Us</a></li>
+				<li class="active"><a href="#" style="font-size: 12pt;">Statistics</a></li>
+				<li><a href="http://www.sulabhinternational.org/rural-sanitation-2/" style="font-size: 12pt;">Sulabh </a></li>
+				<li><a href="info.html" style="font-size: 12pt;">Information </a></li>
+				<li><a href="verif.html" style="font-size: 12pt;">Verification </a></li>
+				 <li><a href="index.html" style="font-size: 12pt;">Contact Us</a></li>
+				 <li class="dropdown" >
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 12pt;">Schemes 
+					  <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+					  <li><a href="https://www.nhp.gov.in/mission-indradhanush1_pg">Mission Inderdhanush</a></li>
+					  <li><a href="http://pmsma.nhp.gov.in">Pradhan Mantri Surakshit Matritva Abhiyan</a></li>
+					  <li><a href="http://pmjandhanyojana.co.in/apply-6000-pregnancy-scheme-modi-registration/
+						  ">Pradhan Mantri Jan Dhan Yojna</a></li>
+					  <li><a href="HTTPS://KRISHNAGIRI.NIC.IN/SCHEME/DR-MUTHULAKSHMI-MATERNITY-BENEFIT-SCHEME/">Krishna Scheme</a></li>
+					  </ul>
+					  </li>
+					  
+					  
+        	 </ul>
+		    </div>
+		 </div>
+	</nav>
+</div>
+
+	<div class="container-fluid" style="padding-top:200px">
+			
+			<div class="row" >
+			  <div class="col-sm-6 col-md-6 col-lg-6" >
+					<canvas id="bar-chart" width="800" height="450"></canvas>
+				 </div>
+			  <div class="col-sm-6 col-md-6 col-lg-6" >
+					<canvas id="pie-chart" width="800" height="450"></canvas>
+
+			  </div>
+			  <div class="row" style="padding-top:140px">
+					<div class="col-sm-6 col-md-6 col-lg-6" >
+							<canvas id="polar-chart" width="800" height="450"></canvas>					   </div>
+					<div class="col-sm-6 col-md-6 col-lg-6" >
+							<canvas id="bar-chart-grouped" width="800" height="450"></canvas>	  
+					</div>
+					<div class="row" style="margin-top:140px">
+							<div class="col-sm-6 col-md-6 col-lg-6" >
+									<canvas id="line-chart" width="800" height="450"></canvas>
+							   </div>
+							<div class="col-sm-6 col-md-6 col-lg-6" >
+								  <canvas id="pie-chart" width="800" height="450"></canvas>
+			  
+							</div>
+			</div>
+		  </div>
+			  
+		  <script>
+  
+				var config = {
+				  apiKey: "AIzaSyAEEzmpvkL-xr92JwX5vtK4hmIDSOfkJyY",
+				  authDomain: "sih2019-3c16b.firebaseapp.com",
+				  databaseURL: "https://sih2019-3c16b.firebaseio.com",
+				  projectId: "sih2019-3c16b",
+				  storageBucket: "sih2019-3c16b.appspot.com",
+				  messagingSenderId: "1044100333190"
+				};
+				firebase.initializeApp(config);
+			  const db=firebase.firestore();
+			  </script>
+
+<script src="js/jquery.min.js"></script>	 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/stellar.js"></script>
+<script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="chart.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+</body>
+</html>

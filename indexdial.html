@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<link href='styledial.css' rel='stylesheet'>
+</head>
+<body>
+
+<div id="phone"> 
+<div id="wrapper">    
+    <button class="key" rel="1" id="one">1</button>
+    <button class="key" rel="2" id="two">2<span>abc</span></button>
+    <button class="key" rel="3" id="three">3<span>def</span></button>
+    <div class="clear"></div>
+    <button class="key" rel="4" id="four">4<span>ghi</span></button>
+    <button class="key" rel="5"id="five">5<span>jkl</span></button>
+    <button class="key" rel="6" id="six">6<span>mno</span></button>
+    <div class="clear"></div>
+    <button class="key" rel="7">7<span>pqrs</span></button>
+    <button class="key" rel="8">8<span>tuv</span></button>
+    <button class="key" rel="9">9<span>wxyz</span></button>
+    <div class="clear"></div>
+    <button class="key special" rel="*">*</button>
+    <button class="key" rel="1">0<span>+</span></button>
+    <button class="key special" rel="#">#</button>
+    <div class="clear"></div>
+    <button class="key nb"></button>
+    <button class="key phone" rel="Make Call"><i class="fa fa-phone"></i></button>
+    <button class="key nb"></button>
+    <div class="clear"></div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyAEEzmpvkL-xr92JwX5vtK4hmIDSOfkJyY",
+    authDomain: "sih2019-3c16b.firebaseapp.com",
+    databaseURL: "https://sih2019-3c16b.firebaseio.com",
+    projectId: "sih2019-3c16b",
+    storageBucket: "sih2019-3c16b.appspot.com",
+    messagingSenderId: "1044100333190"
+  };
+  firebase.initializeApp(config);
+const db=firebase.firestore();
+</script>
+<script src='indexdial.js'></script>
+
+</body>
+</html>
