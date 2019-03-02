@@ -18,6 +18,11 @@ ref.get().then(function (doc) {
 var param = {
   onend: afteraudio
 }
+
+var param1 = {
+  onend: afteraudio1
+}
+
 var param2 = {
   onend: afteraudio2
 }
@@ -35,6 +40,13 @@ var param5 = {
 }
 
 var res = '';
+
+
+function saySomething0(aadhaarNo) {
+  setTimeout(function () {
+    responsiveVoice.speak('Your aadhaar no is ' + aadhaarNo + ' press 1 to confirm else press 2', 'Hindi Female', param1);
+  }, 300);
+}
 
 function saysomething1() {
   setTimeout(function () {
@@ -104,8 +116,28 @@ function saysomething8() {
   }, 300);
 }
 
+function enterAadhaar(done) {
+  $('.key').unbind('click')
+  let aadhaar = []
+  $('.key').click((ev) => {
+    aadhaar.push($(ev.target).attr('rel'))
+    if (aadhaar.length == 12) {
+      $('.key').unbind('click')
+      done(aadhaar.toString())
+    }
+  })
+
+}
+
 function afteraudio() {
   console.log('called');
+  enterAadhaar((aadhaarNo) => {
+    saySomething0(aadhaarNo)
+  });
+
+}
+
+function afteraudio1() {
   $('#one').click(saysomething1)
   $('#two').click(saysomething2)
 }
