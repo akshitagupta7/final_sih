@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+
+        <h1>VERIFICATION</h1>
+        <div class="content">
+            
+            <label>Patient Name</label>
+            <label>Aadhar Verified</label>
+            <label>Last CheckUp Date Verified</label>
+            <label>Last Vaccination Date Verified</label>
+             <label>Health Issues Verified</label>
+            <label>Sanitation Facility Verified</label>
+            <ul id="list"></ul>
+            </div>     
+<script>
+  var config = {
+    apiKey: "AIzaSyAEEzmpvkL-xr92JwX5vtK4hmIDSOfkJyY",
+    authDomain: "sih2019-3c16b.firebaseapp.com",
+    databaseURL: "https://sih2019-3c16b.firebaseio.com",
+    projectId: "sih2019-3c16b",
+    storageBucket: "sih2019-3c16b.appspot.com",
+    messagingSenderId: "1044100333190"
+  };
+  firebase.initializeApp(config);
+const db=firebase.firestore();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="verified.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
