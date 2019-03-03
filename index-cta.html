@@ -2,129 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-
-
-    <title>गृहशोभा</title>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
-    <!-- css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
-	<link href="css/nivo-lightbox.css" rel="stylesheet" />
-	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
-	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
-	<link href="css/animate.css" rel="stylesheet" />
-	<link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
-	<link href="css/style.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet'>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
-	<script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-	<!-- boxed bg -->
-	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
-	<!-- template skin -->
-	<link id="t-colors" href="color/default.css" rel="stylesheet">
-
-
-</head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-<div id="wrapper">
+		<title> गृहशोभा</title>
 	
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-		<div class="top-area" style="padding: 0px;">
-			<div class="container-fluid" style="padding:10px 0px 10px 10px">
-				<div >
-					<h1 class="bold text-left" style="font-family: 'Limelight'; color : white; font-size: 38pt;">
-						<img src="image/National-Emblem-1.jpg" style="width: 90px ; height: 70px; padding: 0px !important ;">
-						&nbsp; गृहशोभा
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+		<meta name="viewport" content="width=device-width" />
+	
+	
+		<!-- Bootstrap core CSS     -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	
+		<!-- Animation library for notifications   -->
+		<link href="assets/css/animate.min.css" rel="stylesheet"/>
+	
+		<!--  Light Bootstrap Table core CSS    -->
+		<link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
+	
+	
+		<!--  CSS for Demo Purpose, don't include it in your project     -->
+		<link href="assets/css/demo.css" rel="stylesheet" />
+	
+		<script src="libraries/RGraph.svg.common.core.js"></script>
+		<script src="libraries/RGraph.svg.bar.js"></script>
+		<script src="libraries/RGraph.svg.line.js"></script>
+		<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
+		<script src="libraries/RGraph.bar.js"></script>
+		<script src="libraries/RGraph.svg.pie.js"></script>
+		<script src="libraries/RGraph.common.core.js"></script>
+		<script src="libraries/RGraph.bar.js"></script>
+		<script src="libraries/RGraph.common.core.js"></script>
+        <script src="libraries/RGraph.line.js"></script>
 
-					</h1>
-					<!-- <div class="col-sm-6 col-md-6">
-					</div> -->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<!--     Fonts and icons     -->
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+		<link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+	<style>
+	.sidebar:after{
+            background: black !important;
+	}
+	</style>
+	</head>
+	<body>
+	
+	<div class="wrapper">
+		<div class="sidebar">
+	
+		<!--
+	
+			Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+			Tip 2: you can also add an image using data-image tag
+	
+		-->
+	
+			<div class="sidebar-wrapper" >
+				<div class="logo">
+				<center>  <h1 style="font-weight:bold;font-size:30pt;"> गृहशोभा</h1></center>
 				</div>
-			</div>
+	
+				<ul class="nav">
+					<li>
+						<a href="index.html">
+						  <!--  <i class="pe-7s-graph"></i> -->
+							<p style="font-size:15pt">Home</p>
+						</a>
+					</li>
+					<li>
+						<a href="index.html">
+						   <!-- <i class="pe-7s-user"></i> -->
+							<p style="font-size:15pt">About Us</p>
+						</a>
+					</li>
+					<li class="active">
+						<a href="#">
+						  <!--  <i class="pe-7s-note2"></i> -->
+							<p style="font-size:15pt">Statistics</p>
+						</a>
+					</li>
+					<li>
+							<a href="http://www.sulabhinternational.org/rural-sanitation-2/">
+							<!--    <i class="pe-7s-science"></i>  -->
+								<p style="font-size:15pt">Sulabh</p>
+							</a>
+						</li>
+					<li>
+						<a href="info.html">
+						   <!-- <i class="pe-7s-news-paper"></i>-->
+							<p style="font-size:15pt">Information</p>
+						</a>
+					</li>
+					<li>
+						<a href="verify.html">
+						<!--    <i class="pe-7s-science"></i>  -->
+							<p style="font-size:15pt">Verification</p>
+						</a>
+					</li>
+				   <!--   <li>
+					  <a href="maps.html">
+							<i class="pe-7s-map-marker"></i>
+							<p>Maps</p>
+						</a>
+					</li> -->
+					<li>
+						<a href="index.html">
+						  <!--  <i class="pe-7s-bell"></i> -->
+							<p style="font-size:15pt">Contact Us</p>
+						</a>
+					</li>
+								</ul>
+			
 		</div>
-        <div class="container navigation">
-		
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <!-- <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt="" width="150" height="40" />
-                </a> -->
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-			  <ul class="nav navbar-nav" >
-				<li><a href="index.html" style="font-size: 12pt;">Home</a></li>
-				<li><a href="index.html" style="font-size: 12pt;">About Us</a></li>
-				<li class="active"><a href="#" style="font-size: 12pt;">Statistics</a></li>
-				<li><a href="http://www.sulabhinternational.org/rural-sanitation-2/" style="font-size: 12pt;">Sulabh </a></li>
-				<li><a href="info.html" style="font-size: 12pt;">Information </a></li>
-				<li><a href="verif.html" style="font-size: 12pt;">Verification </a></li>
-				 <li><a href="index.html" style="font-size: 12pt;">Contact Us</a></li>
-				 <li class="dropdown" >
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 12pt;">Schemes 
-					  <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-					  <li><a href="https://www.nhp.gov.in/mission-indradhanush1_pg">Mission Inderdhanush</a></li>
-					  <li><a href="http://pmsma.nhp.gov.in">Pradhan Mantri Surakshit Matritva Abhiyan</a></li>
-					  <li><a href="http://pmjandhanyojana.co.in/apply-6000-pregnancy-scheme-modi-registration/
-						  ">Pradhan Mantri Jan Dhan Yojna</a></li>
-					  <li><a href="HTTPS://KRISHNAGIRI.NIC.IN/SCHEME/DR-MUTHULAKSHMI-MATERNITY-BENEFIT-SCHEME/">Krishna Scheme</a></li>
-					  </ul>
-					  </li>
-					  
-					  
-        	 </ul>
-		    </div>
-		 </div>
-	</nav>
-</div>
-
-	<div class="container-fluid" style="padding-top:200px">
+	   </div>
+	<div class="container-fluid" style="padding-top:100px;padding-left:300px">
 			
 			<div class="row" >
-			  <div class="col-sm-6 col-md-6 col-lg-6" >
-					<canvas id="bar-chart" width="800" height="450"></canvas>
+			  <div class="col-sm-4 col-md-6 col-lg-6" >
+				  <div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Birth Rate in each district</div>
+				  <div class="card" style="background-color:black;height:380px">
+					<div style="width: 550px; height: 350px" id="chart-container"></div>
+				</div>
 				 </div>
-			  <div class="col-sm-6 col-md-6 col-lg-6" >
-					<canvas id="pie-chart" width="800" height="450"></canvas>
+			  <div class="col-sm-4 col-md-4 col-lg-6" >
+					<div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Maternal Mortality Rate</div>
+
+					<div class="card" style="background-color:black;height:380px">
+							<div style="width: 550px; height: 350px" id="cc"></div>
+					</div>
 
 			  </div>
-			  <div class="row" style="padding-top:140px">
-					<div class="col-sm-6 col-md-6 col-lg-6" >
-							<canvas id="polar-chart" width="800" height="450"></canvas>					   </div>
-					<div class="col-sm-6 col-md-6 col-lg-6" >
-							<canvas id="bar-chart-grouped" width="800" height="450"></canvas>	  
+			  </div>
+			  <div class="row" style="margin-top:10px">
+					<div class="col-sm-4 col-md-4 col-lg-6" >
+							<div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Common Diseases in pregnancy</div>
+
+							<div class="card" style="background-color:black;height:380px">
+									<div style="width: 550px; height: 350px" id="chart-container1"></div>
+						   </div>
 					</div>
-					<div class="row" style="margin-top:140px">
-							<div class="col-sm-6 col-md-6 col-lg-6" >
-									<canvas id="line-chart" width="800" height="450"></canvas>
+					<div class="col-sm-4 col-md-4 col-lg-6" >
+							<div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Number of Pregnant Women in different States</div>
+
+							<div class="card" style="background-color:black;height:380px">
+									<div style="width: 550px; height: 350px"  id="visualization"></div>
+					</div>
+					</div>
+				</div>
+					<div class="row" style="margin-top:10px">
+							<div class="col-sm-4 col-md-4 col-lg-6" >
+									<div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Availability of doctors in different districts</div>
+
+									<div class="card" style="background-color:black;height:380px;height:380px">
+											<canvas id="cvs" width="550" height="350">
+												
+												</canvas>
+									</div>
 							   </div>
-							<div class="col-sm-6 col-md-6 col-lg-6" >
-								  <canvas id="pie-chart" width="800" height="450"></canvas>
-			  
-							</div>
-			</div>
+							   <div class="col-sm-4 col-md-4 col-lg-6" >
+									<div style="background-color:black;color:white;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px">Number of Toilets needed in each district</div>
+
+									<div class="card" style="background-color:black;height:380px">
+											<canvas id="cvs1" width="550" height="350">
+													
+												</canvas>
+									</div>
+							   </div>
+					</div>
+			
+		  </div>
 		  </div>
 			  
-		  <script>
+	<!--	  <script>
   
 				var config = {
 				  apiKey: "AIzaSyAEEzmpvkL-xr92JwX5vtK4hmIDSOfkJyY",
@@ -136,7 +187,7 @@
 				};
 				firebase.initializeApp(config);
 			  const db=firebase.firestore();
-			  </script>
+			  </script> -->
 
 <script src="js/jquery.min.js"></script>	 
 <script src="js/bootstrap.min.js"></script>
@@ -148,14 +199,396 @@
 <script src="plugins/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>
-<script src="js/custom.js"></script>
+<!--<script src="js/custom.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<script src="chart.js"></script>
+<script src="chartstatic.js"></script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 
 
 </body>
+
+<script>
+							data = [
+							0,3,2,5,4,6,2,5,8,7,
+							9,8,6,8,7,5,8,9,11,13,
+							16,11,12,15,14,16,15,17,18,16,
+							19,18,16,15,18,19,20,23,24,21,
+							22,26,24,25,27,28,26,28,29,30,
+							32,34,30,31,29,28,34,35,38,37,
+							39,41,43,42,41,45,39,40,46,43,
+							40,38,36,37,39,35,34,33,35,32,
+							30,29,31,26,28,24,25,26,25,25,
+							26,24,28,25,26,24,25,27,25,26,
+							27,26,29,28,24,26,25,25,27,28,
+							27,26,25,26,23,24,23,21,20,20
+						];
+						
+						max = 100;
+						
+						// Turn the dataset into a stacked one
+						data.forEach(function (v, k, arr)
+						{
+							arr[k] = [v, 2, max - v - 2];
+						});
+					
+						bar = new RGraph.SVG.Bar({
+							id: 'chart-container',
+							data: data,
+							options: {
+							grouping: 'stacked',
+								hmargin: .5,
+								backgroundGridVlines: false,
+								backgroundGridBorder: false,
+								yaxis: false,
+								xaxis: false,
+								textColor: 'white',
+            textSize: 14,
+								colors: ['Gradient(blue:green)','yellow', '#eee'],
+								xaxisLabels: ['Patna','Mujafarnagar','Arawal','Aurangabad']
+							}
+						}).wave();					
+</script>
+<script>
+	var line = new RGraph.SVG.Line({
+        id: 'cc',
+        data: [
+            [9,9,0,9,0],
+            [6,7,10,5,0],
+            [9,4,0,3,4]
+        ],
+        options: {
+            colors: ['#cc0','blue','red'],
+            xaxis: false,
+            yaxis: false,
+            linewidth: 3,
+            backgroundGridColor: '#999',
+			xaxisLabels: ['2010','2012','2014','2016','2018'],
+			
+            textColor: '#ccc',
+            tickmarksStyle: 'circle',
+            tickmarksFill: 'black',
+            tickmarksLinewidth: 3
+        }
+    }).trace();  
+
+</script>
+
+<script>
+
+		google.load('visualization', '1', {'packages': ['geochart']});
+		
+		google.setOnLoadCallback(drawVisualization);
+		
+		function drawVisualization() {
+		
+		 var data = google.visualization.arrayToDataTable([
+		
+			['State', 'Population'],
+		
+			['Maharashtra', 112372972],
+		
+			['Bihar', 103804637],
+		
+			['West Bengal', 91347736],
+		
+			['Madhya Pradesh', 72597565],
+		
+			['Andhra Pradesh', 49386799],
+		
+			['Haryana', 25353081],
+		
+		  ['Uttar Pradesh', 46578787],
+		
+		  ]);
+		
+		 
+		
+		  var opts = {
+		
+			region: 'IN',
+		
+			displayMode: 'regions',
+		
+			resolution: 'provinces',
+		
+			width: 590,
+		
+			height: 380,
+			colors:['#00FF00','#0000FF']
+		
+		  };
+		
+		 var geochart = new google.visualization.GeoChart(
+		
+			  document.getElementById('visualization'));
+		
+		 geochart.draw(data, opts);
+		
+		};
+		
+		</script>
+		<script>
+				RGraph.SVG.GLOBALS = {
+					colors: ['#666'],
+					donut: true,
+					donutWidth: 30,
+					marginLeft: 5,
+					marginRight: 5,
+					marginTop: 5,
+					marginBottom: 5
+				};
+			
+			
+			
+			
+			
+				pie1a = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [100],
+					options: {
+					}
+				}).draw();
+			
+				pi1b = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [65,35],
+					options: {
+						colors: ['#9AC17E','transparent']
+					}
+				}).roundRobin();
+			
+			
+			
+				pie2a = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [100],
+					options: {
+						radius: pie1a.radius - 33
+					}
+				}).draw();
+			
+				pie2b = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [23,77],
+					options: {
+						radius: pie2a.radius,
+						colors: ['#FADA31','transparent']
+					}
+				}).roundRobin();
+			
+			
+			
+				pie3a = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [100],
+					options: {
+						radius: pie2a.radius - 33
+					}
+				}).draw();
+			
+				pie3b = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [65,35],
+					options: {
+						radius: pie3a.radius,
+						colors: ['#D3696B','transparent']
+					}
+				}).roundRobin();
+				
+				
+			
+			
+			
+				pie4a = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [100],
+					options: {
+						radius: pie3a.radius - 33
+					}
+				}).draw();
+			
+				pie4b = new RGraph.SVG.Pie({
+					id: 'chart-container1',
+					data: [63,37],
+					options: {
+						radius: pie4a.radius,
+						colors: ['#82C1E0','transparent']
+					}
+				}).roundRobin();
+				
+				
+				
+				
+			
+				// Add some custom text
+				RGraph.SVG.text({
+					object: pie1a,
+					text: 'Gestational Diabetes',
+					x: pie1a.centerx - 5,
+					y: pie1a.centery - pie1a.radius + (RGraph.SVG.GLOBALS.donutWidth / 2),
+					color: 'white',
+					bold: true,
+					halign: 'right',
+					valign: 'center',
+					background: 'rgba(255,255,255,0.35)',
+					padding: 2
+				});
+			
+				RGraph.SVG.text({
+					object: pie1a,
+					text: 'High Fever',
+					x: pie2a.centerx - 5,
+					y: pie2a.centery - pie2a.radius + (RGraph.SVG.GLOBALS.donutWidth / 2),
+					color: 'white',
+					bold: true,
+					halign: 'right',
+					valign: 'center',
+					background: 'rgba(255,255,255,0.35)',
+					padding: 2
+				});
+			
+				RGraph.SVG.text({
+					object: pie1a,
+					text: 'Anaemia',
+					x: pie3a.centerx - 5,
+					y: pie3a.centery - pie3a.radius + (RGraph.SVG.GLOBALS.donutWidth / 2),
+					color: 'white',
+					bold: true,
+					halign: 'right',
+					valign: 'center',
+					background: 'rgba(255,255,255,0.35)',
+					padding: 2
+				});
+			
+				RGraph.SVG.text({
+					object: pie1a,
+					text: 'Urinary Infection',
+					x: pie4a.centerx - 5,
+					y: pie4a.centery - pie4a.radius + (RGraph.SVG.GLOBALS.donutWidth / 2),
+					color: 'white',
+					bold: true,
+					halign: 'right',
+					valign: 'center',
+					background: 'rgba(255,255,255,0.35)',
+					padding: 2
+				});
+			</script>
+			<script>
+    data = [[45,56],[75,32],[39,47],[34,48],[46,47],[48,52]];
+
+    new RGraph.Bar({
+        id: 'cvs',
+        data: data,
+        options: {
+            shadow: false,
+            colorsStroke: 'rgba(0,0,0,0)',
+            grouping: 'grouped',
+            colors: ['Gradient(white:#ccf:#ccf:#ccf:#ccf)','Gradient(white:#faa:#faa:#faa:#faa)'],
+            backgroundGridVlines: false,
+            backgroundGridBorder: false,
+            textColor: 'white',
+            xaxisLabels: ['Patna','Ara','Arawal','Gaya','Araria','Banka'],
+            textSize: 16,
+            marginLeft: 35,
+            marginBottom: 35,
+            marginTop: 15,
+            marginRight: 5
+        }
+    }).wave();
+</script>
+<script>
+		// Some infomation for the chart
+		data = [
+			[8,6,3,5,12,8,5,4,6,12],
+			[4,8,6,3,5,2,4,8,5,2],
+			[8,6,3,5,9,4,5,8,4,6]
+		];
+		
+		fillstyle = [
+			'Gradient(rgba(96,0,0,0.5):red:red:red:red)',
+			'Gradient(rgba(0,96,0,0.5):#0f0:#0f0:#0f0)',
+			'Gradient(rgba(0,0,96,0.5):rgba(0,0,96,0.5):blue:blue:blue)'
+		];
+	
+		delay  = 500;
+		frames = 45;
+	
+		//
+		// Show the first (red) section
+		//
+		new RGraph.Line({
+			id: 'cvs1',
+			data: data,
+			options: {
+				textColor: '#fff',
+				tickmarksStyle: null,
+				shadow: false,
+				linewidth: 0.001,
+				colorsBackground: 'black',
+				backgroundGridVlines: false,
+				backgroundGridColor: '#666',
+				backgroundGridBorder: false,
+				axes: false,
+				spline: true,
+				filled: true,
+				filledColors: [fillstyle[0],'transparent','transparent'],
+				yaxisScaleMax: 35,
+				marginLeft: 40,
+				textSize: 16
+			}
+		}).trace({frames: frames});
+	
+	
+		//
+		// Show the second (green) section
+		//
+		setTimeout(function ()
+		{
+			new RGraph.Line({
+				id: 'cvs1',
+				data: data,
+				options: {
+					tickmarksStyle: false,
+					shadow: false,
+					linewidth: 0.001,
+					backgroundGrid: false,
+					axes: false,
+					filledColors: ['transparent', fillstyle[1], 'transparent'],
+					spline: true,
+					filled: true,
+					yaxisScaleMax: 35,
+					marginLeft: 40
+				}
+			}).trace({frames: frames});
+		}, delay);
+	
+		//
+		// Show the third (blue) section
+		//
+		setTimeout(function ()
+		{
+			new RGraph.Line({
+				id: 'cvs1',
+				data: data,
+				options: {
+					tickmarksStyle: false,
+					shadow: false,
+					linewidth: 0.001,
+					backgroundGrid: false,
+					axes: false,
+					filledColors: ['transparent', 'transparent', fillstyle[2]],
+					spline: true,
+					filled: true,
+					yaxisScaleMax: 35,
+					marginLeft: 40
+				}
+			}).trace({frames: frames});
+		}, delay * 2);
+	</script>
+	
+	
+		
 </html>
