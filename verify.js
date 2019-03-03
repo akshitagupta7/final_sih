@@ -37,8 +37,8 @@ function render(doc){
     phcno.textContent=doc.data().phcno;
     currentmonth.textContent=doc.data().currentmonth;
     lastcheckup.textContent=doc.data().lastcheckupdate;
-    lastvaccination.textContent=doc.data().lastvaccination;
-    disease.textContent=doc.data().disease;
+    lastvaccination.textContent=doc.data().lastvaccinationdate;
+ //   disease.textContent=doc.data().disease;
     toilet.textContent=doc.data().toilet;
     
     
@@ -48,16 +48,12 @@ function render(doc){
     li.appendChild(aadharno);
     li.appendChild(mobileno)
     li.appendChild(region);
-    li.appendChild(phcno);
-    /*
+ //   li.appendChild(phcno);
+    
     li.appendChild(currentmonth);
     li.appendChild(lastcheckup);
     li.appendChild(lastvaccination);
-
-  
     li.appendChild(toilet);
-    
-    */
     
     li.appendChild(button)
 	list.appendChild(li);

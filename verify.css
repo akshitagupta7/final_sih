@@ -35,13 +35,38 @@ li{
 }
 
 li:nth-child(even){
-  padding: 5px;
+  padding-left: 5px;
   background: #f2f2f2;
+}
+
+li span:nth-child(5){
+  padding-left:140px;
+}
+li span:nth-child(6){
+  padding-left:120px;
+}
+li span:nth-child(7){
+  padding-left:120px;
+}
+
+li button{
+  position: relative;
+  margin-left:140px;
+  border: 0;
+  background: rgb(23, 204, 17);
+  border-radius: 10px;
+  padding: 15px;
+  width: 5%;
+  box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-family: ubuntu;
+  letter-spacing: 1px;
+  color: #999;
 }
 
 li span{
   display: inline;
-  padding: 50px;
+  padding: 40px;
 }
 
 li span:nth-child(2){
@@ -88,26 +113,13 @@ form:after{
   display: block;
 }
 
-button{
-  border: 0;
-  background: rgb(23, 204, 17);
-  border-radius: 10px;
-  padding: 13px;
-  width: 5%;
-  box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
-  font-weight: bold;
-  font-family: ubuntu;
-  letter-spacing: 1px;
-  color: #999;
-  content: "Call to verify";
-  
-}
+
 .bar-chart {
   background-color: #C7D9D9;
   }
 
 label{
-  padding:10px;
+  padding-left:55px;
 
 }
 input{

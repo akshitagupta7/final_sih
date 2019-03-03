@@ -32,10 +32,6 @@ function render(doc){
     li.appendChild(lastvaccinationverify);
     li.appendChild(diseaseverify);
     li.appendChild(toiletverify);
-  
-    
-    
-    
 	list.appendChild(li);
 
 }

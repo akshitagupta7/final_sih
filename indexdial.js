@@ -44,7 +44,7 @@ var res = '';
 
 function saySomething0(aadhaarNo) {
   setTimeout(function () {
-    responsiveVoice.speak('Your aadhaar no is ' + aadhaarNo + ' press 1 to confirm else press 2', 'Hindi Female', param1);
+    responsiveVoice.speak('Your aadhaar number is ' + aadhaarNo + ' press 1 to confirm else press 2', 'Hindi Female', param1);
   }, 300);
 }
 
@@ -65,7 +65,7 @@ function saysomething2() {
 
 function saysomething3() {
   setTimeout(function () {
-    responsiveVoice.speak('Was your last vaccination date ' + vaccindate + ' if yes, press 1, else press 2', 'Hindi Female', param3);
+    responsiveVoice.speak('Did the Asha visit you, if yes press 1 else press 2', 'Hindi Female', param3);
   }, 300);
   db.collection('user').doc(id).update({
     lastvaccinationverify: true
@@ -75,7 +75,7 @@ function saysomething3() {
 
 function saysomething4() {
   setTimeout(function () {
-    responsiveVoice.speak('Was your last vaccination date ' + vaccindate + ' if yes, press 1, else press 2', 'Hindi Female', param3);
+    responsiveVoice.speak('Did the Asha visit you, if yes press 1 else press 2', 'Hindi Female', param3);
   }, 300);
 }
 
