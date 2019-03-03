@@ -302,6 +302,8 @@ new Chart(document.getElementById("line-chart"), {
   }
 });
 
+
+
 new Chart(document.getElementById("polar-chart"), {
   type: 'polarArea',
   data: {
@@ -326,3 +328,12 @@ new Chart(document.getElementById("polar-chart"), {
 
 asyncCall();
 console.log(arr)
+
+
+
+// outer card design
+// background: white !important;
+// box-shadow: 1px 1px 1px 1px #d3d3d3cf;
+// padding-top: 10px;
+// Make the text balck/light grey
+// Remove bold from card header + make font size larger
