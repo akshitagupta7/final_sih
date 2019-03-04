@@ -19,12 +19,9 @@ h1{
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
-ul{
-  list-style-type: none;
-  padding: 0;
-}
 
-li{
+
+td{
   padding: 5px;
   background: #f6f6f6;
   font-size: 20px;
@@ -34,29 +31,15 @@ li{
   height: 46px;
 }
 
-li:nth-child(even){
-  padding-left: 5px;
-  background: #f2f2f2;
-}
 
-li span:nth-child(5){
-  padding-left:140px;
-}
-li span:nth-child(6){
-  padding-left:120px;
-}
-li span:nth-child(7){
-  padding-left:120px;
-}
 
-li button{
+td button{
   position: relative;
-  margin-left:140px;
   border: 0;
   background: rgb(23, 204, 17);
   border-radius: 10px;
   padding: 15px;
-  width: 5%;
+  width: 15%;
   box-shadow: -1px 0px 1px rgba(0,0,0,0.1);
   font-weight: bold;
   font-family: ubuntu;
@@ -64,16 +47,9 @@ li button{
   color: #999;
 }
 
-li span{
-  display: inline;
-  padding: 40px;
-}
 
-li span:nth-child(2){
-  font-size: 16px;
-  margin-top: 6px;
-  color: #999;
-}
+
+
 
 li div{
   position: absolute;
@@ -118,10 +94,6 @@ form:after{
   background-color: #C7D9D9;
   }
 
-label{
-  padding-left:55px;
-
-}
 input{
   padding: 10px;
   position: relative;
@@ -140,3 +112,16 @@ input{
   height: 85vh;
   min-height: 300px;
 } 
+
+
+#verification-table-container{
+  width: 100%;
+  overflow-x: auto;
+  background-color: white;
+}
+
+#myid{
+  width: 90%;
+  min-width: 800px;
+  margin: 15px auto;
+}

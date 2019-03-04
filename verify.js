@@ -8,25 +8,25 @@ const form = document.querySelector('#add-elements');
 
 //create elements and rendering function to display data
 function render(doc){
-	let li=document.createElement('li');
+	let li=document.createElement('tr');
 	//let patientname=document.createElement('span');
-    let aadharno=document.createElement('span');
-    let mobileno=document.createElement('span');
-    let region=document.createElement('span');
-    let phcno=document.createElement('span');
+    let aadharno=document.createElement('td');
+    let mobileno=document.createElement('td');
+    let region=document.createElement('td');
+    let phcno=document.createElement('td');
     //let currentweight=document.createElement('span');
-    let toilet=document.createElement('span');
-    let disease=document.createElement('span');
-    let currentmonth=document.createElement('span');
-    let lastcheckup=document.createElement('span');
-    let lastvaccination=document.createElement('span');
+    let toilet=document.createElement('td');
+    let disease=document.createElement('td');
+    let currentmonth=document.createElement('td');
+    let lastcheckup=document.createElement('td');
+    let lastvaccination=document.createElement('td');
     let button=document.createElement('button');
+    let buttonTD = document.createElement('td');
+    buttonTD.append(button);
     button.addEventListener('click',()=>{
     localStorage.setItem('button',doc.id);
     button.setAttribute('content','Dial to call')
         window.open("indexdial.html");
-        
-
     })
     //dataset.push(doc.data().phone);
 	li.setAttribute('data-id',doc.id);
@@ -40,9 +40,6 @@ function render(doc){
     lastvaccination.textContent=doc.data().lastvaccinationdate;
  //   disease.textContent=doc.data().disease;
     toilet.textContent=doc.data().toilet;
-    
-    
-    
  
   //  li.appendChild(patientname);
     li.appendChild(aadharno);
@@ -54,8 +51,7 @@ function render(doc){
     li.appendChild(lastcheckup);
     li.appendChild(lastvaccination);
     li.appendChild(toilet);
-    
-    li.appendChild(button)
+    li.appendChild(buttonTD);
 	list.appendChild(li);
 
 }

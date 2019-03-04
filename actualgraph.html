@@ -1,0 +1,165 @@
+<html>
+    <head>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+        <title> गृहशोभा</title>
+    
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
+    
+    
+        <!-- Bootstrap core CSS     -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    
+        <!-- Animation library for notifications   -->
+        <link href="assets/css/animate.min.css" rel="stylesheet" />
+    
+        <!--  Light Bootstrap Table core CSS    -->
+        <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+    
+    
+        <!--  CSS for Demo Purpose, don't include it in your project     -->
+        <link href="assets/css/demo.css" rel="stylesheet" />
+        <style>
+                .sidebar:after {
+                    background: #3fbbc0 !important;
+                }
+            </style>    
+    </head>
+    <body>
+
+            <div class="header" style="background-color:#3fbbc0;height:110px;font-weight:bold;padding-top:20px;font-size: 50px;color:white;text-align: center">Statistics</div>
+            <div class="wrapper">
+                <div class="row">
+                <div class="col-lg-3">
+                <div class="sidebar">
+        
+                    <!--
+            
+                    Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+                    Tip 2: you can also add an image using data-image tag
+            
+                -->
+        
+                    <div class="sidebar-wrapper">
+                        <div class="logo">
+                            <center>
+                                <h1 style="font-weight:bold;font-size:30pt;"> गृहशोभा</h1>
+                            </center>
+                        </div>
+        
+                        <ul class="nav">
+                            <li>
+                                <a href="index.html">
+                                      <i class="fa fa-home"></i> 
+                                    <p style="font-size:15pt">Home</p>
+                                </a>
+                            </li>
+                           
+                            <li class="active">
+                                <a href="#">
+                                    <i class="fa fa-stack-exchange"></i> 
+                                    <p style="font-size:15pt">Statistics</p>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="verify.html">
+                                  <i class="fa fa-info-circle"></i>
+                                    <p style="font-size:15pt">User Verification</p>
+                                </a>
+                            </li>
+                            
+                            </li>
+                            <!--   <li>
+                              <a href="maps.html">
+                                    <i class="pe-7s-map-marker"></i>
+                                    <p>Maps</p>
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="index.html">
+                                    <i class="fa fa-phone"></i> 
+                                    <p style="font-size:15pt">Contact Us</p>
+                                </a>
+                            </li>
+                        </ul>
+        
+                    </div>
+                </div>
+            
+            </div>
+         <!-- <canvas id="polar-chart" width="500" height="300"></canvas> -->
+        <!-- <canvas id="doughnut-chart" width="800" height="450"></canvas> --> 
+        <!-- <canvas id="pie-chart" width="800" height="450"></canvas>
+        //<canvas id="doughnut-chart" width="800" height="450"></canvas> -->
+        <div class="col-lg-9">
+        <div class="container-fluid" style="padding-top:100px;float: right">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div style="background-color:#A9A9A9;color:black;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px;width:540px">District ::No of pregnant women</div>
+                        <div class="card" data-toggle="modal"  style="height:380px;width:540px">
+                         <canvas style="width: 50%; height: 50%" id="bar-chart"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div style="background-color:#A9A9A9;color:black;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px;width:540px">Number of patients in each health centre</div>
+    
+                        <div class="card" style="height:380px;width:540px;padding-left: 15%">
+                            <canvas style="width: 400px; height: 250px;padding-right: 20%" id="pie-chart"></canvas>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10px">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div style="background-color:#A9A9A9;color:black;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px;width:540px">District ::Sanitation Measure</div>
+    
+                        <div class="card" style="height:380px;width:540px">
+                          <canvas style="width: 80%; height: 80%" id="bar-chart-grouped"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div style="background-color:#A9A9A9;color:black;margin-bottom:5px;font-weight:bold;text-align:center;font-size:20px;width:540px">Month ::Number of pregnant women</div>
+    
+                        <div class="card" style="height:380px;width:540px">
+                            <canvas style="width: 80%; height: 80%" id="line-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+             
+     
+<script>
+  
+  var config = {
+    apiKey: "AIzaSyAEEzmpvkL-xr92JwX5vtK4hmIDSOfkJyY",
+    authDomain: "sih2019-3c16b.firebaseapp.com",
+    databaseURL: "https://sih2019-3c16b.firebaseio.com",
+    projectId: "sih2019-3c16b",
+    storageBucket: "sih2019-3c16b.appspot.com",
+    messagingSenderId: "1044100333190"
+  };
+  firebase.initializeApp(config);
+const db=firebase.firestore();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="updatedata.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

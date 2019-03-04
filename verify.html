@@ -8,7 +8,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
         <link rel="stylesheet" href="verify.css"> 
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
@@ -27,64 +27,66 @@
 
     </head>
     <body>
-        <div id="wrapper">
+            <div id="wrapper">
 	
-            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-                <div class="top-area" style="padding: 0px;">
-                    <div class="container-fluid" style="padding:10px 0px 10px 10px">
-                        <div >
-                            <h1 class="bold text-left" style="font-family: 'Limelight'; color : white; font-size: 38pt;">
-                                <img src="image/National-Emblem-1.jpg" style="width: 90px ; height: 70px; padding: 0px !important ;">
-                                &nbsp; गृहशोभा
-        
-                            </h1>
-                            <!-- <div class="col-sm-6 col-md-6">
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="container navigation">
+                    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                        <div class="top-area" style="padding: 0px;">
+                            <div class="container-fluid" style="padding:10px 0px 10px 10px">
+                                <div >
+                                    <h1 class="bold text-left" style="font-family: 'Limelight'; color : white; font-size: 38pt;">
+                                        <img src="image/National-Emblem-1.jpg" style="width: 90px ; height: 70px; padding: 0px !important ;">
+                                        &nbsp; गृहशोभा
                 
-                    <div class="navbar-header page-scroll">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <!-- <a class="navbar-brand" href="index.html">
-                            <img src="img/logo.png" alt="" width="150" height="40" />
-                        </a> -->
+                                    </h1>
+                                    <!-- <div class="col-sm-6 col-md-6">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container navigation">
+                        
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- <a class="navbar-brand" href="index.html">
+                                    <img src="img/logo.png" alt="" width="150" height="40" />
+                                </a> -->
+                            </div>
+                
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                              <ul class="nav navbar-nav" >
+                                <li ><a href="index.html" style="font-size: 12pt;"><i class="fa fa-home"></i> Home</a></li>
+                                <li><a href="index-cta.html" style="font-size: 12pt;"> <i class="fa fa-stack-exchange"></i> Statistics</a></li>
+                                <li class="active" ><a href="verify.html" style="font-size: 12pt;"> <i class="fa fa-info-circle"></i>User Verification</a></li>
+                                <li><a href="index.html" style="font-size: 12pt;"><i class="fa fa-phone"></i> Contact Us </a></li>
+                              </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container -->
+                    </nav>
                     </div>
-        
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                      <ul class="nav navbar-nav" >
-                        <li><a href="index.html" style="font-size: 12pt;">Home</a></li>
-                        <li><a href="index.html" style="font-size: 12pt;">About Us</a></li>
-                        <li ><a href="index-cta.html" style="font-size: 12pt;">Statistics</a></li>
-                        <li><a href="http://www.sulabhinternational.org/rural-sanitation-2/" style="font-size: 12pt;">Sulabh </a></li>
-                        <li><a href="info.html" style="font-size: 12pt;">Information </a></li>
-                        <li class="active"><a href="verify.html" style="font-size: 12pt;">Verification </a></li>
-                         <li><a href="index.html" style="font-size: 12pt;">Contact Us</a></li>
-                         <li><a href="verified.html" style="font-size: 12pt;">Verified</a></li>
-                     </ul>
-                    </div>
-                 </div>
-            </nav>
-        </div>
         <div style="padding-top:200px">
-        <h1>Data of all pregnant women</h1>
-       <div class="content">
-            
-            <label>Aadhar No</label>
-            <label>Mobile No</label>
-            <label>Region</label>
-            <label>Current Month</label>
-            <label>Last CheckUp Date</label>
-            <label>Last Vaccine Date</label>
-            <label>Is Toilet facility</label>
-            <label>Click To Call</label> 
-            
-            <ul id="list"></ul> 
-        </div> 
+        <h1 style="padding-bottom:20px">Data of pregnant women</h1>
+        <div id="verification-table-container">
+                <table id="myid">
+                        <thead>
+                                <th>Aadhar No</th>
+                                <th>Mobile No</th>
+                                <th>Region</th>
+                                <th>Current Month</th>
+                                <th>Last CheckUp Date</th>
+                                <th>Last Vaccine Date</th>
+                                <th>Is Toilet facility</th>
+                                <th>Click To Call</th>   
+                        </thead>
+                        <tbody id="list">
+                            
+                        </tbody>
+                    </table>
+        </div>
         </div>   
 <script>
   var config = {

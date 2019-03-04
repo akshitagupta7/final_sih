@@ -3,6 +3,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calling..</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -12,10 +31,22 @@
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 <link href='styledial.css' rel='stylesheet'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+<style>
+  .sidebar:after {
+    background:#3fbbc0 !important;
+        }
+    </style>
 </head>
 <body>
+    <div class="header" style="background-color:#3fbbc0;height:110px;font-weight:bold;padding-top:20px;font-size: 50px;color:white;text-align: center">Dialing</div>
 
-<div id="phone">
+  
+    <div class="row">
+<div id="phone" class="col-lg-10">
 <div id="wrapper">
     <button class="key" rel="1" id="one">1</button>
     <button class="key" rel="2" id="two">2<span>abc</span></button>
@@ -37,6 +68,20 @@
     <button class="key phone" rel="Make Call"><i class="fa fa-phone"></i></button>
     <button class="key nb"></button>
     <div class="clear"></div>
+  </div>
+</div>
+
+<div class="col-lg-2" style="background-color:#A9A9A9;width:100px;float: right;height:800px;">
+   <h1 style="text-align:center;color: white;font-weight: bold;padding-top: 20px">STEPS</h1>
+   <div style="color: white;font-weight: bold;font-size: 25px">
+     Step 1: Listen to the Audio
+   </div>
+   <div style="color: white;font-weight: bold;font-size: 25px">
+      Step 2: Press Button 
+    </div>
+    <div style="color: white;font-weight: bold;font-size: 25px">
+        Step 3: Wait for the next question
+      </div>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
